@@ -1,0 +1,233 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.toggle:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.toggle i {
+  width: 50%;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 2.5px;
+  margin-left: 2.5px;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Transición suave para el movimiento de la bola */
+}
+
+input {
+  display: none;
+}
+
+/* Light mode */
+
+.light {
+  background: #F2F9FE;
+}
+
+.light .toggle {
+  background: #111729;
+}
+
+.light .toggle .bxs-sun {
+  color: #111729;
+}
+
+.light .toggle .bx-moon {
+  color: #F2F9FE;
+}
+
+.light .toggle .ball {
+  background: #F2F9FE;
+}
+
+/* Dark mode */
+
+.dark {
+  background: #111729;
+}
+
+.dark .toggle {
+  background: #223344;
+}
+
+.dark .toggle .bx-sun {
+  color: #F2F9FE;
+}
+
+.dark .toggle .bxs-moon {
+  color: #111729;
+}
+
+.dark .toggle .ball {
+  background: #F2F9FE;
+  transform: translateX(25px);
+}
+
+.dark .nav-links li a:hover {
+  color: #F2F9FE;
+}
+
+li, a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #909193;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s case 0s;
+}
+
+.nav-links li a:hover {
+  color: #111729;
+}
+
+.hero-icon {
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  transition: 0.5s;
+}
+
+.hero-icon:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.dark .hero-icon {
+  content: url(/public/src/assets/alarado-icon-homepage-dark.svg);
+}
+
+.main-container-img {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-inline: 78px;
+}
+
+.hero-img {
+  width: 40%;
+  height: 40%;
+  transition: 0.5s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05, 1.05);
+}
+
+h1 {
+  margin: 0px;
+  font-size: 60px;
+  color: #223344;
+}
+
+.dark h1 {
+  color: #FFFFFF;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #223344;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.dark h4 {
+  color: #FFFFFF;
+}
+
+p {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #909193;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #2A4DD0;
+  border: none;
+  border-radius: 10px;
+  width: 170px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #2A4DD0;
+  text-decoration: underline;
+}
+
+button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.checkbox-text {
+  margin: 0px;
+  font-size: 14px;
+  padding-inline: 10px;
+}
+
+.main-container-checkbox {
+  display: flex;
+  margin-top: 30px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #4CA154;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.dark .circle {
+  color: #111729;
+}
